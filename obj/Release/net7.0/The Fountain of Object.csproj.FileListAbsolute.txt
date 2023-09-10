@@ -1,0 +1,14 @@
+D:\ProgrammingProject\C#\The Fountain of Object\The Fountain of Object\bin\Release\net7.0\The Fountain of Object.exe
+D:\ProgrammingProject\C#\The Fountain of Object\The Fountain of Object\bin\Release\net7.0\The Fountain of Object.deps.json
+D:\ProgrammingProject\C#\The Fountain of Object\The Fountain of Object\bin\Release\net7.0\The Fountain of Object.runtimeconfig.json
+D:\ProgrammingProject\C#\The Fountain of Object\The Fountain of Object\bin\Release\net7.0\The Fountain of Object.dll
+D:\ProgrammingProject\C#\The Fountain of Object\The Fountain of Object\bin\Release\net7.0\The Fountain of Object.pdb
+D:\ProgrammingProject\C#\The Fountain of Object\The Fountain of Object\obj\Release\net7.0\The Fountain of Object.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProgrammingProject\C#\The Fountain of Object\The Fountain of Object\obj\Release\net7.0\The Fountain of Object.AssemblyInfoInputs.cache
+D:\ProgrammingProject\C#\The Fountain of Object\The Fountain of Object\obj\Release\net7.0\The Fountain of Object.AssemblyInfo.cs
+D:\ProgrammingProject\C#\The Fountain of Object\The Fountain of Object\obj\Release\net7.0\The Fountain of Object.csproj.CoreCompileInputs.cache
+D:\ProgrammingProject\C#\The Fountain of Object\The Fountain of Object\obj\Release\net7.0\The Fountain of Object.dll
+D:\ProgrammingProject\C#\The Fountain of Object\The Fountain of Object\obj\Release\net7.0\refint\The Fountain of Object.dll
+D:\ProgrammingProject\C#\The Fountain of Object\The Fountain of Object\obj\Release\net7.0\The Fountain of Object.pdb
+D:\ProgrammingProject\C#\The Fountain of Object\The Fountain of Object\obj\Release\net7.0\The Fountain of Object.genruntimeconfig.cache
+D:\ProgrammingProject\C#\The Fountain of Object\The Fountain of Object\obj\Release\net7.0\ref\The Fountain of Object.dll

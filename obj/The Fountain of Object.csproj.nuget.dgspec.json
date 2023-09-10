@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\ProgrammingProject\\C#\\The Fountain of Object\\The Fountain of Object\\The Fountain of Object.csproj": {}
+  },
+  "projects": {
+    "D:\\ProgrammingProject\\C#\\The Fountain of Object\\The Fountain of Object\\The Fountain of Object.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ProgrammingProject\\C#\\The Fountain of Object\\The Fountain of Object\\The Fountain of Object.csproj",
+        "projectName": "The Fountain of Object",
+        "projectPath": "D:\\ProgrammingProject\\C#\\The Fountain of Object\\The Fountain of Object\\The Fountain of Object.csproj",
+        "packagesPath": "C:\\Users\\kar1221\\.nuget\\packages\\",
+        "outputPath": "D:\\ProgrammingProject\\C#\\The Fountain of Object\\The Fountain of Object\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kar1221\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
