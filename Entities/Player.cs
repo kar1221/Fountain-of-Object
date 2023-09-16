@@ -15,14 +15,17 @@ namespace The_Fountain_of_Object.Entities;
 
 public class Player : Entity
 {
-    public int Bullets = 5;
+    public int Bullets;
+    public int MaxBullets;
     public bool IsAlive { get; set; } = true;
     public bool IsEscapable { get; set; }
     public bool PlayerWon { get; set; }
-    public Player(int row, int column)
+    public Player(int row, int column, int bullets)
     {
         Row = row;
         Column = column;
+        Bullets = bullets;
+        MaxBullets = bullets;
     }
     
     public void Move(Direction direction)
@@ -74,7 +77,7 @@ public class Player : Entity
         /*
          * Notify player when out of bullet.
          */
-        if (Bullets < 0)
+        if (Bullets == 0)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Out of bullet.");
@@ -131,7 +134,7 @@ public class Player : Entity
     }
     
     
-    public override string ToString() => $"(Row={Row}, Column={Column})";
+    public override string ToString() => $"Bullets: {Bullets}/{MaxBullets}";
     
 }
 

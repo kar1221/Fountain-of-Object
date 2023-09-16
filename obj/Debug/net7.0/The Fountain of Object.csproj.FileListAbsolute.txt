@@ -12,4 +12,3 @@ D:\ProgrammingProject\C#\The Fountain of Object\The Fountain of Object\obj\Debug
 D:\ProgrammingProject\C#\The Fountain of Object\The Fountain of Object\obj\Debug\net7.0\The Fountain of Object.pdb
 D:\ProgrammingProject\C#\The Fountain of Object\The Fountain of Object\obj\Debug\net7.0\The Fountain of Object.genruntimeconfig.cache
 D:\ProgrammingProject\C#\The Fountain of Object\The Fountain of Object\obj\Debug\net7.0\ref\The Fountain of Object.dll
-D:\ProgrammingProject\C#\The Fountain of Object\The Fountain of Object\obj\Debug\net7.0\The Fountain of Object.csproj.AssemblyReference.cache

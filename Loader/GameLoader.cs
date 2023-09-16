@@ -25,7 +25,7 @@ public class GameLoader
     /*
      * After the level is initialized, run the game.
      */
-    public void Run()
+    public Status Run()
     {
         var gameplayGui = new GameplayGui(_level.Rows, _level.Columns);
         
@@ -36,24 +36,30 @@ public class GameLoader
         {
             gameplayGui.ShowBoard(_player.Row, _player.Column);
             
+            
+            
+            // Show bullets count
+            Console.WriteLine(_player);
+            
             /*
              * Since player.PlayerWon is changed in CollisionEvent, we need to move the winning condition check to here
              * otherwise the player will be asked to enter a command again even though they have already won the game.
              */
-            if (_player.PlayerWon || !_player.IsAlive) break;
+            if (_player.PlayerWon) return Status.LevelFinished;
+            if (!_player.IsAlive) return Status.Failed;
             
             
             PlayerCommand(Console.ReadKey(true));
             
             
             /*
-             * Check collision again after the player entered the command to keep player updated.
+             * Check events after user has made their move.
              */
             NearbyEvent();
             CollisionEvent();
             
             /*
-             * Perform out of bound check after the player has entered a command.
+             * Perform out of bound check to ensure everything is in the board.
              */
             OutOfBoundCheck();
             
@@ -69,7 +75,7 @@ public class GameLoader
     {
         /*
          * Another evidence to prove my code is really messy.
-         * Move Console.Clear(); here so that the console can show Shoot(),  NearbyEvent(), CollisionEvent()'s
+         * Move Console.Clear(); here so that the console is able to show Shoot(),  NearbyEvent(), CollisionEvent()'s
          * message as well.
          */
         Console.Clear();
@@ -78,7 +84,7 @@ public class GameLoader
          * Add or remove command here.
          */
         /* ----------------------------------------------------- */
-        var commandActions = new Dictionary<ConsoleKey, Action?>
+        var commandActions = new Dictionary<ConsoleKey, Action>
         {
             { ConsoleKey.DownArrow, () => _player.Move(Direction.South) },
             { ConsoleKey.UpArrow, () => _player.Move(Direction.North) },

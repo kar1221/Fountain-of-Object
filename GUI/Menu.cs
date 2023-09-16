@@ -1,58 +1,46 @@
 ﻿namespace The_Fountain_of_Object.GUI;
 
+
 public class Menu
 {
     private readonly string[] _options;
     private int _selectedIndex;
-    private readonly int _lengthOfOptions;
 
-    public Menu(string[] options)
+    public Menu(string[] options) => _options = options;
+    
+    private void ShowMenu()
     {
-        _options = options;
-        _lengthOfOptions = options.Length;
-    }
+        var arrayLength = _options.Length;
 
-    private void PrintMenu()
-    {
-        for (var x = 0; x < _options.Length; x++)
+        for (var x = 0; x < arrayLength; x++)
         {
-            if (_selectedIndex == x)
-            {
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine($"{x+1} -- {_options[x]}");
-                Console.ResetColor();
-            }
-            else
-            {
-                Console.WriteLine($"{x+1} -- {_options[x]}");
-            }
+            if(x == _selectedIndex) Console.Write("> ");
+            Console.WriteLine($"{x+1}. {_options[x]}");
         }
     }
 
-    public int GetUserChoice()
+    public string RunGui()
     {
-        ConsoleKeyInfo consoleKeyInfo;
+        var optionsLength = _options.Length;
+        ConsoleKeyInfo keyInfo;
         do
         {
             Console.Clear();
-            PrintMenu();
-            consoleKeyInfo = Console.ReadKey();
-
-            switch (consoleKeyInfo.Key)
+            ShowMenu();
+            keyInfo = Console.ReadKey(true);
+            switch (keyInfo.Key)
             {
-                case ConsoleKey.UpArrow:
-                    if (_selectedIndex > 0)
-                        _selectedIndex--;
-                    break;
                 case ConsoleKey.DownArrow:
-                    if (_selectedIndex < _lengthOfOptions - 1)
-                        _selectedIndex++;
+                    if (_selectedIndex < optionsLength - 1) _selectedIndex++;
+                    break;
+                case ConsoleKey.UpArrow:
+                    if (_selectedIndex > 0) _selectedIndex--;
                     break;
             }
-            
-        } while (consoleKeyInfo.Key != ConsoleKey.Enter);
+        } while (keyInfo.Key != ConsoleKey.Enter);
 
-        return _selectedIndex;
-
+        return _options[_selectedIndex];
     }
+    
+    
 }

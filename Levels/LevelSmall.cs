@@ -19,7 +19,7 @@ public class LevelSmall : Level
         Builder = new RoomBuilder(6, this);
         
         Builder.AddEntity(new Entrance(0,0));
-        Builder.AddEntity(new Player(0,0));
+        Builder.AddEntity(new Player(0,0, 2));
         
         
         Builder.AddEntity(new Pits(0, 1));

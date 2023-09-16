@@ -109,23 +109,5 @@ public class Entity
         
     }
 
-    public Coordinate GetCoordinateByDirection(Level level, Direction direction)
-    {
-        var roomRows = level.Rows;
-        var roomColumns = level.Columns;
 
-        switch (direction)
-        {
-            case Direction.North:
-                return Row - 1 < 0 ? new Coordinate(Row, Column) : new Coordinate(Row - 1, Column);
-            case Direction.South:
-                return Row + 1 > roomRows ? new Coordinate(Row, Column) : new Coordinate(Row + 1, Column);
-            case Direction.East:
-                return Column - 1 < 0 ? new Coordinate(Row, Column) : new Coordinate(Row, Column - 1);
-            case Direction.West:
-                return Column + 1 > roomColumns ? new Coordinate(Row, Column) : new Coordinate(Row, Column + 1);
-            default:
-                return new Coordinate(0, 0);
-        }
-    }
 }
